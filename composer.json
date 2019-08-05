@@ -1,0 +1,5 @@
+{
+    "require": {
+        "bocharsky-bw/arrayzy": "^0.6.1"
+    }
+}
