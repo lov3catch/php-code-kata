@@ -1,8 +1,7 @@
 # php-code-kata
 🍿 code-kata in PHP (just for jun &amp; research)
 
-#1 https://github.com/bocharsky-bw/Arrayzy
-
+#1 https://github.com/bocharsky-bw/Arrayzy  
 #2 https://github.com/thephpleague/fractal 
 
 
