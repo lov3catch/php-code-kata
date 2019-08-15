@@ -2,7 +2,8 @@
     "require": {
         "bocharsky-bw/arrayzy": "^0.6.1",
         "atoum/stubs": "^2.6",
-        "beberlei/assert": "^3.2"
+        "beberlei/assert": "^3.2",
+        "php-di/php-di": "^6.0"
     },
     "require-dev": {
         "atoum/atoum": "^3.3"

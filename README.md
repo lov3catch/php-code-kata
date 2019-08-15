@@ -12,4 +12,5 @@
 * https://github.com/php-ds/ext-ds  
 * https://github.com/PHP-DI/PHP-DI
 * https://github.com/beberlei/assert
+* https://github.com/php-ai/php-ml
 * ...
