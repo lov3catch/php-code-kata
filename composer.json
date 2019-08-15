@@ -1,5 +1,9 @@
 {
     "require": {
-        "bocharsky-bw/arrayzy": "^0.6.1"
+        "bocharsky-bw/arrayzy": "^0.6.1",
+        "atoum/stubs": "^2.6"
+    },
+    "require-dev": {
+        "atoum/atoum": "^3.3"
     }
 }

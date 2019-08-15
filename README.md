@@ -10,4 +10,6 @@
 * https://github.com/K-Phoen/rulerz  
 * https://github.com/swoole/swoole-src  
 * https://github.com/php-ds/ext-ds  
+* https://github.com/PHP-DI/PHP-DI
+* https://github.com/beberlei/assert
 * ...
