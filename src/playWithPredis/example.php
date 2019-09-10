@@ -1,17 +1,25 @@
 <?php declare(strict_types=1);
 
-require_once __DIR__ . '/../vendor/autoload.php';
+namespace Domain\PlayWithPredis;
+
+require_once __DIR__ . '/../../vendor/autoload.php';
 
 use Symfony\Component\Dotenv\Dotenv;
+use Predis\Client;
+use Ramsey\Uuid\Uuid;
 
-$dotenv = new Dotenv();
-$dotenv->load(__DIR__ . '/../.env');
+(new Dotenv())->load(__DIR__ . '/../../.env');
 
-$client = new Predis\Client($_ENV['REDIS_URI']);
+$client = new Client($_ENV['REDIS_URI']);
 
-$data = ['offset' => 0, 'limit' => 10, 'provider' => 'zn', 'search' => 'song name'];
+$data = [
+    'offset' => 0, 
+    'limit' => 10, 
+    'provider' => 'zn', 
+    'search' => 'song name'
+];
 
-$key = \Ramsey\Uuid\Uuid::uuid1()->toString();
+$key = Uuid::uuid1()->toString();
 
 echo 'uploading' . PHP_EOL;
 $client->set($key, json_encode($data));
