@@ -2,7 +2,12 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-$client = new Predis\Client('redis://rediscloud:pKEHyZRJZ7Lx9FA9TqTRUUu2yUG5BbVH@redis-12774.c59.eu-west-1-2.ec2.cloud.redislabs.com:12774');
+use Symfony\Component\Dotenv\Dotenv;
+
+$dotenv = new Dotenv();
+$dotenv->load(__DIR__ . '/../.env');
+
+$client = new Predis\Client($_ENV['REDIS_URI']);
 
 $data = ['offset' => 0, 'limit' => 10, 'provider' => 'zn', 'search' => 'song name'];
 
