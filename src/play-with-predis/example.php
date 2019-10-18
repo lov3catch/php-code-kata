@@ -4,19 +4,19 @@ namespace Domain\PlayWithPredis;
 
 require_once __DIR__ . '/../../vendor/autoload.php';
 
-use Symfony\Component\Dotenv\Dotenv;
 use Predis\Client;
 use Ramsey\Uuid\Uuid;
+use Symfony\Component\Dotenv\Dotenv;
 
 (new Dotenv())->load(__DIR__ . '/../../.env');
 
 $client = new Client($_ENV['REDIS_URI']);
 
 $data = [
-    'offset' => 0, 
-    'limit' => 10, 
-    'provider' => 'zn', 
-    'search' => 'song name'
+    'offset'   => 0,
+    'limit'    => 10,
+    'provider' => 'zn',
+    'search'   => 'song name'
 ];
 
 $key = Uuid::uuid1()->toString();
@@ -36,3 +36,6 @@ $client->set($key, json_encode($newData));
 
 echo 'getting' . PHP_EOL;
 echo $client->get($key);
+
+echo '' . PHP_EOL;
+var_dump($client->get('has-no-this-key'));
