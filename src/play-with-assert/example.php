@@ -8,6 +8,7 @@ use Assert\Assert;
 use Assert\Assertion;
 
 try {
+    Assert::that(5)->be
     Assert::that(5)->between(1, 10);
     Assert::that("Foox")->nullOr()->string()->startsWith("Foo");
     Assert::that(1)->notEmpty()->integer();

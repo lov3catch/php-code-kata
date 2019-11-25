@@ -16,11 +16,15 @@ class Arrayze
 
     public function flip(array $data): array
     {
+        /**
+         * @param ArrayImitator
+         */
         return (ArrayImitator::create($data))->flip()->toArray();
     }
 
     public function sayHi(): string
     {
-        return 'hi';
+        return 1;
+#        return 'hi';
     }
 }

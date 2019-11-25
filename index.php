@@ -4,4 +4,7 @@ use function Domain\PlayWithTdd\add1;
 
 require __DIR__ . '/vendor/autoload.php';
 
-add1(1);
+$foo = 'foo1';
+$bar = 'bar1';
+
+
