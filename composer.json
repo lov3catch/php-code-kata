@@ -1,4 +1,10 @@
 {
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:makasim/telegram-bot-php.git"
+        }
+    ],
     "require": {
         "bocharsky-bw/arrayzy": "^0.6.1",
         "atoum/stubs": "^2.6",
@@ -9,7 +15,11 @@
         "ramsey/uuid": "^3.8",
         "symfony/dotenv": "^4.3",
         "react/event-loop": "^1.1.0",
-        "react/http": "^0.8.4"
+        "react/http": "^0.8.4",
+        "symfony/http-client": "^5.0",
+        "symfony/dom-crawler": "^5.0",
+        "symfony/css-selector": "^5.0",
+        "formapro/telegram-bot": "^0.1.15"
     },
     "require-dev": {
         "atoum/atoum": "^3.3",

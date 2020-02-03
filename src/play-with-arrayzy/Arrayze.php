@@ -4,7 +4,7 @@ namespace App;
 
 use Arrayzy\ArrayImitator;
 
-require __DIR__ . '/../vendor/autoload.php';
+require __DIR__ . '/../../vendor/autoload.php';
 
 class Arrayze
 {
@@ -24,7 +24,7 @@ class Arrayze
 
     public function sayHi(): string
     {
-        return 1;
-#        return 'hi';
+//        return 1;
+        return 'hi';
     }
 }
