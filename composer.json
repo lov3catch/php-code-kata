@@ -15,7 +15,7 @@
         "ramsey/uuid": "^3.8",
         "symfony/dotenv": "^4.3",
         "react/event-loop": "^1.1.0",
-        "react/http": "^0.8.4",
+        "react/http": "^1.7.0",
         "symfony/http-client": "^5.0",
         "symfony/dom-crawler": "^5.0",
         "symfony/css-selector": "^5.0",
