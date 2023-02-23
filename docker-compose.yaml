@@ -1,0 +1,20 @@
+version: "3.7"
+services:
+  app:
+    build:
+      context: .
+      dockerfile: etc/images/php/Dockerfile
+    volumes:
+      - .:/app
+  blackfire:
+    image: blackfire/blackfire:2
+    ports: [ "8307" ]
+    environment:
+      # Exposes BLACKFIRE_SERVER_* environment variables from the host
+      BLACKFIRE_SERVER_ID: 7e1dc1a1-0e76-48ec-9a82-6afbfc1fc5db
+      BLACKFIRE_SERVER_TOKEN: 5f0786a5a7b38945a796dc84f756bfe171e559e7312b962bffacb5cfdbadfbf4
+
+      # Exposes BLACKFIRE_CLIENT_* environment variables
+      # allowing the client to communicate with Blackfire's API:
+      BLACKFIRE_CLIENT_ID: 9edcf227-5991-48b7-95c8-81886a47a3d2
+      BLACKFIRE_CLIENT_TOKEN: 74da97dde3ec71ef6d41dd5bc7ce81656180930ea11782b5892ace1579c61817
